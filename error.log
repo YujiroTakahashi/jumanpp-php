@@ -1,0 +1,1570 @@
+In file included from /usr/include/php/20180731/main/php.h:38:0,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/usr/include/php/20180731/Zend/zend_API.h:175:2: error: unknown type name ‘zend_fasttext_globals’; did you mean ‘zend_output_globals’?
+  zend_##module_name##_globals module_name##_globals;
+  ^
+/home/yujiro/git/jumanpp-php/jumanpp.c:17:1: note: in expansion of macro ‘ZEND_DECLARE_MODULE_GLOBALS’
+ ZEND_DECLARE_MODULE_GLOBALS(fasttext)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/php/20180731/main/php_ini.h:22:0,
+                 from /usr/include/php/20180731/main/fopen_wrappers.h:24,
+                 from /usr/include/php/20180731/main/php.h:463,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/home/yujiro/git/jumanpp-php/jumanpp.c:22:92: error: ‘zend_fasttext_globals’ undeclared here (not in a function); did you mean ‘fasttext_globals’?
+  STD_PHP_INI_ENTRY("fasttext.model_dir",  NULL, PHP_INI_SYSTEM, OnUpdateString, model_dir, zend_fasttext_globals, fasttext_globals)
+                                                                                            ^
+/usr/include/php/20180731/Zend/zend_ini.h:102:21: note: in definition of macro ‘ZEND_INI_ENTRY3_EX’
+  { name, on_modify, arg1, arg2, arg3, default_value, displayer, sizeof(default_value)-1, sizeof(name)-1, modifiable },
+                     ^~~~
+/usr/include/php/20180731/Zend/zend_ini.h:111:2: note: in expansion of macro ‘ZEND_INI_ENTRY2_EX’
+  ZEND_INI_ENTRY2_EX(name, default_value, modifiable, on_modify, arg1, arg2, NULL)
+  ^~~~~~~~~~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_ini.h:134:2: note: in expansion of macro ‘ZEND_INI_ENTRY2’
+  ZEND_INI_ENTRY2(name, default_value, modifiable, on_modify, (void *) XtOffsetOf(struct_type, property_name), (void *) &struct_ptr)
+  ^~~~~~~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_portability.h:354:36: note: in expansion of macro ‘XtOffset’
+ # define XtOffsetOf(s_type, field) XtOffset(s_type*, field)
+                                    ^~~~~~~~
+/usr/include/php/20180731/Zend/zend_ini.h:134:71: note: in expansion of macro ‘XtOffsetOf’
+  ZEND_INI_ENTRY2(name, default_value, modifiable, on_modify, (void *) XtOffsetOf(struct_type, property_name), (void *) &struct_ptr)
+                                                                       ^~~~~~~~~~
+/usr/include/php/20180731/main/php_ini.h:66:28: note: in expansion of macro ‘STD_ZEND_INI_ENTRY’
+ #define STD_PHP_INI_ENTRY  STD_ZEND_INI_ENTRY
+                            ^~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:22:2: note: in expansion of macro ‘STD_PHP_INI_ENTRY’
+  STD_PHP_INI_ENTRY("fasttext.model_dir",  NULL, PHP_INI_SYSTEM, OnUpdateString, model_dir, zend_fasttext_globals, fasttext_globals)
+  ^~~~~~~~~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_portability.h:347:40: error: expected expression before ‘)’ token
+     ((zend_long) (((char *) (&(((p_type)NULL)->field))) - ((char *) NULL)))
+                                        ^
+/usr/include/php/20180731/Zend/zend_ini.h:102:21: note: in definition of macro ‘ZEND_INI_ENTRY3_EX’
+  { name, on_modify, arg1, arg2, arg3, default_value, displayer, sizeof(default_value)-1, sizeof(name)-1, modifiable },
+                     ^~~~
+/usr/include/php/20180731/Zend/zend_ini.h:111:2: note: in expansion of macro ‘ZEND_INI_ENTRY2_EX’
+  ZEND_INI_ENTRY2_EX(name, default_value, modifiable, on_modify, arg1, arg2, NULL)
+  ^~~~~~~~~~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_ini.h:134:2: note: in expansion of macro ‘ZEND_INI_ENTRY2’
+  ZEND_INI_ENTRY2(name, default_value, modifiable, on_modify, (void *) XtOffsetOf(struct_type, property_name), (void *) &struct_ptr)
+  ^~~~~~~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_portability.h:354:36: note: in expansion of macro ‘XtOffset’
+ # define XtOffsetOf(s_type, field) XtOffset(s_type*, field)
+                                    ^~~~~~~~
+/usr/include/php/20180731/Zend/zend_ini.h:134:71: note: in expansion of macro ‘XtOffsetOf’
+  ZEND_INI_ENTRY2(name, default_value, modifiable, on_modify, (void *) XtOffsetOf(struct_type, property_name), (void *) &struct_ptr)
+                                                                       ^~~~~~~~~~
+/usr/include/php/20180731/main/php_ini.h:66:28: note: in expansion of macro ‘STD_ZEND_INI_ENTRY’
+ #define STD_PHP_INI_ENTRY  STD_ZEND_INI_ENTRY
+                            ^~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:22:2: note: in expansion of macro ‘STD_PHP_INI_ENTRY’
+  STD_PHP_INI_ENTRY("fasttext.model_dir",  NULL, PHP_INI_SYSTEM, OnUpdateString, model_dir, zend_fasttext_globals, fasttext_globals)
+  ^~~~~~~~~~~~~~~~~
+In file included from /usr/include/php/20180731/main/php.h:38:0,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext___construct’ undeclared here (not in a function); did you mean ‘zim_jumanpp___construct’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:59:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __construct,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_CTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:59:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __construct,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_CTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[0].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:59:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __construct,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_CTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:59:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __construct,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_CTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[0].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:59:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __construct,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_CTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext___destruct’ undeclared here (not in a function); did you mean ‘zim_fasttext___construct’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:60:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __destruct,        arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_DTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:60:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __destruct,        arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_DTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[1].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:60:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __destruct,        arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_DTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:60:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __destruct,        arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_DTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[1].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:60:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, __destruct,        arginfo_fasttext_void,  ZEND_ACC_PUBLIC|ZEND_ACC_DTOR)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getError’ undeclared here (not in a function); did you mean ‘zim_fasttext___destruct’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:61:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getError,          arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:61:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getError,          arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[2].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:61:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getError,          arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:61:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getError,          arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[2].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:61:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getError,          arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_load’ undeclared here (not in a function); did you mean ‘arginfo_fasttext_load’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:62:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, load,              arginfo_fasttext_load,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:62:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, load,              arginfo_fasttext_load,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[3].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:62:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, load,              arginfo_fasttext_load,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:62:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, load,              arginfo_fasttext_load,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[3].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:62:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, load,              arginfo_fasttext_load,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getWordRows’ undeclared here (not in a function); did you mean ‘zim_fasttext_getError’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:63:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordRows,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:63:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordRows,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[4].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:63:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordRows,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:63:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordRows,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[4].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:63:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordRows,       arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getLabelRows’ undeclared here (not in a function); did you mean ‘zim_fasttext_getWordRows’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:64:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabelRows,      arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:64:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabelRows,      arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[5].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:64:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabelRows,      arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:64:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabelRows,      arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[5].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:64:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabelRows,      arginfo_fasttext_void,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getWordId’ undeclared here (not in a function); did you mean ‘zim_fasttext_getWordRows’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:65:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordId,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:65:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordId,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[6].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:65:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordId,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:65:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordId,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[6].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:65:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordId,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getSubwordId’ undeclared here (not in a function); did you mean ‘zim_fasttext_getWordId’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:66:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordId,      arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:66:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordId,      arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[7].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:66:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordId,      arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:66:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordId,      arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[7].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:66:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordId,      arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getWord’ undeclared here (not in a function); did you mean ‘zim_fasttext_getWordId’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:67:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWord,           arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:67:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWord,           arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[8].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:67:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWord,           arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:67:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWord,           arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[8].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:67:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWord,           arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getLabel’ undeclared here (not in a function); did you mean ‘zim_fasttext_getLabelRows’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:68:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabel,          arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:68:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabel,          arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[9].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:68:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabel,          arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:68:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabel,          arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[9].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:68:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getLabel,          arginfo_fasttext_id,    ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getWordVectors’ undeclared here (not in a function); did you mean ‘zim_fasttext_getWordRows’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:69:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordVectors,    arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:69:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordVectors,    arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[10].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:69:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordVectors,    arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:69:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordVectors,    arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[10].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:69:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getWordVectors,    arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getSubwordVector’ undeclared here (not in a function); did you mean ‘zim_fasttext_getWordVectors’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:70:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordVector,  arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:70:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordVector,  arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[11].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:70:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordVector,  arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:70:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordVector,  arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[11].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:70:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSubwordVector,  arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getSentenceVectors’ undeclared here (not in a function); did you mean ‘zim_fasttext_getSubwordVector’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:71:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSentenceVectors,arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:71:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSentenceVectors,arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[12].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:71:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSentenceVectors,arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:71:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSentenceVectors,arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[12].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:71:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getSentenceVectors,arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getPredict’ undeclared here (not in a function); did you mean ‘zim_fasttext_getWord’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:72:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getPredict,        arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:72:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getPredict,        arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[13].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:72:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getPredict,        arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:72:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getPredict,        arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[13].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:72:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getPredict,        arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getNgrams’ undeclared here (not in a function); did you mean ‘zim_fasttext_getWord’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:73:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNgrams,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:73:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNgrams,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[14].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:73:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNgrams,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:73:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNgrams,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[14].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:73:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNgrams,         arginfo_fasttext_word,  ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getNN’ undeclared here (not in a function); did you mean ‘zim_fasttext_getWord’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:74:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNN,             arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:74:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNN,             arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[15].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:74:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNN,             arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:74:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNN,             arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[15].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:74:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getNN,             arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: ‘zim_fasttext_getAnalogies’ undeclared here (not in a function); did you mean ‘zim_fasttext_getLabel’?
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:75:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getAnalogies,      arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:75:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getAnalogies,      arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[16].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:75:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getAnalogies,      arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: error: initializer element is not constant
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:75:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getAnalogies,      arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:62:23: note: (near initialization for ‘php_fasttext_class_methods[16].handler’)
+ #define ZEND_MN(name) zim_##name
+                       ^
+/usr/include/php/20180731/Zend/zend_API.h:67:69: note: in definition of macro ‘ZEND_FENTRY’
+ #define ZEND_FENTRY(zend_name, name, arg_info, flags) { #zend_name, name, arg_info, (uint32_t) (sizeof(arg_info)/sizeof(struct _zend_internal_arg_info)-1), flags },
+                                                                     ^~~~
+/usr/include/php/20180731/Zend/zend_API.h:78:69: note: in expansion of macro ‘ZEND_MN’
+ #define ZEND_ME(classname, name, arg_info, flags) ZEND_FENTRY(name, ZEND_MN(classname##_##name), arg_info, flags)
+                                                                     ^~~~~~~
+/usr/include/php/20180731/main/php.h:419:25: note: in expansion of macro ‘ZEND_ME’
+ #define PHP_ME          ZEND_ME
+                         ^~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:75:2: note: in expansion of macro ‘PHP_ME’
+  PHP_ME(fasttext, getAnalogies,      arginfo_fasttext_wordk, ZEND_ACC_PUBLIC)
+  ^~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c: In function ‘php_fasttext_object_free_storage’:
+/home/yujiro/git/jumanpp-php/jumanpp.c:85:2: error: unknown type name ‘php_fasttext_object’; did you mean ‘php_jumanpp_object’?
+  php_fasttext_object *intern = php_fasttext_from_obj(object);
+  ^~~~~~~~~~~~~~~~~~~
+  php_jumanpp_object
+/home/yujiro/git/jumanpp-php/jumanpp.c:85:32: warning: implicit declaration of function ‘php_fasttext_from_obj’; did you mean ‘php_jumanpp_from_obj’? [-Wimplicit-function-declaration]
+  php_fasttext_object *intern = php_fasttext_from_obj(object);
+                                ^~~~~~~~~~~~~~~~~~~~~
+                                php_jumanpp_from_obj
+/home/yujiro/git/jumanpp-php/jumanpp.c:85:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+/home/yujiro/git/jumanpp-php/jumanpp.c:91:30: error: request for member ‘zo’ in something not a structure or union
+  zend_object_std_dtor(&intern->zo);
+                              ^~
+/home/yujiro/git/jumanpp-php/jumanpp.c:91:23: warning: passing argument 1 of ‘zend_object_std_dtor’ from incompatible pointer type [-Wincompatible-pointer-types]
+  zend_object_std_dtor(&intern->zo);
+                       ^
+In file included from /usr/include/php/20180731/Zend/zend_globals.h:32:0,
+                 from /usr/include/php/20180731/Zend/zend_compile.h:708,
+                 from /usr/include/php/20180731/Zend/zend_modules.h:24,
+                 from /usr/include/php/20180731/Zend/zend_API.h:25,
+                 from /usr/include/php/20180731/main/php.h:38,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/usr/include/php/20180731/Zend/zend_objects.h:30:15: note: expected ‘zend_object * {aka struct _zend_object *}’ but argument is of type ‘zend_function_entry (*)[1] {aka struct _zend_function_entry (*)[1]}’
+ ZEND_API void zend_object_std_dtor(zend_object *object);
+               ^~~~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c: In function ‘php_fasttext_object_new’:
+/home/yujiro/git/jumanpp-php/jumanpp.c:97:2: error: unknown type name ‘php_fasttext_object’; did you mean ‘php_jumanpp_object’?
+  php_fasttext_object *intern;
+  ^~~~~~~~~~~~~~~~~~~
+  php_jumanpp_object
+In file included from /usr/include/php/20180731/Zend/zend.h:29:0,
+                 from /usr/include/php/20180731/main/php.h:34,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/home/yujiro/git/jumanpp-php/jumanpp.c:100:29: error: ‘php_fasttext_object’ undeclared (first use in this function); did you mean ‘php_fasttext_object_new’?
+  intern = ecalloc(1, sizeof(php_fasttext_object) + zend_object_properties_size(class_type));
+                             ^
+/usr/include/php/20180731/Zend/zend_alloc.h:164:52: note: in definition of macro ‘ecalloc’
+ #define ecalloc(nmemb, size)    _ecalloc((nmemb), (size) ZEND_FILE_LINE_CC ZEND_FILE_LINE_EMPTY_CC)
+                                                    ^~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:100:29: note: each undeclared identifier is reported only once for each function it appears in
+  intern = ecalloc(1, sizeof(php_fasttext_object) + zend_object_properties_size(class_type));
+                             ^
+/usr/include/php/20180731/Zend/zend_alloc.h:164:52: note: in definition of macro ‘ecalloc’
+ #define ecalloc(nmemb, size)    _ecalloc((nmemb), (size) ZEND_FILE_LINE_CC ZEND_FILE_LINE_EMPTY_CC)
+                                                    ^~~~
+/usr/include/php/20180731/Zend/zend_alloc.h:164:51: warning: passing argument 2 of ‘_ecalloc’ makes integer from pointer without a cast [-Wint-conversion]
+ #define ecalloc(nmemb, size)    _ecalloc((nmemb), (size) ZEND_FILE_LINE_CC ZEND_FILE_LINE_EMPTY_CC)
+                                                   ^
+/home/yujiro/git/jumanpp-php/jumanpp.c:100:11: note: in expansion of macro ‘ecalloc’
+  intern = ecalloc(1, sizeof(php_fasttext_object) + zend_object_properties_size(class_type));
+           ^~~~~~~
+In file included from /usr/include/php/20180731/Zend/zend.h:29:0,
+                 from /usr/include/php/20180731/main/php.h:34,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/usr/include/php/20180731/Zend/zend_alloc.h:77:31: note: expected ‘size_t {aka long unsigned int}’ but argument is of type ‘zend_function_entry * {aka struct _zend_function_entry *}’
+ ZEND_API void*  ZEND_FASTCALL _ecalloc(size_t nmemb, size_t size ZEND_FILE_LINE_DC ZEND_FILE_LINE_ORIG_DC) ZEND_ATTRIBUTE_MALLOC ZEND_ATTRIBUTE_ALLOC_SIZE2(1,2);
+                               ^~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:102:30: error: request for member ‘zo’ in something not a structure or union
+  zend_object_std_init(&intern->zo, class_type);
+                              ^~
+/home/yujiro/git/jumanpp-php/jumanpp.c:102:23: warning: passing argument 1 of ‘zend_object_std_init’ from incompatible pointer type [-Wincompatible-pointer-types]
+  zend_object_std_init(&intern->zo, class_type);
+                       ^
+In file included from /usr/include/php/20180731/Zend/zend_globals.h:32:0,
+                 from /usr/include/php/20180731/Zend/zend_compile.h:708,
+                 from /usr/include/php/20180731/Zend/zend_modules.h:24,
+                 from /usr/include/php/20180731/Zend/zend_API.h:25,
+                 from /usr/include/php/20180731/main/php.h:38,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/usr/include/php/20180731/Zend/zend_objects.h:26:29: note: expected ‘zend_object * {aka struct _zend_object *}’ but argument is of type ‘zend_function_entry (*)[1] {aka struct _zend_function_entry (*)[1]}’
+ ZEND_API void ZEND_FASTCALL zend_object_std_init(zend_object *object, zend_class_entry *ce);
+                             ^~~~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:103:32: error: request for member ‘zo’ in something not a structure or union
+  object_properties_init(&intern->zo, class_type);
+                                ^~
+/home/yujiro/git/jumanpp-php/jumanpp.c:103:25: warning: passing argument 1 of ‘object_properties_init’ from incompatible pointer type [-Wincompatible-pointer-types]
+  object_properties_init(&intern->zo, class_type);
+                         ^
+In file included from /usr/include/php/20180731/main/php.h:38:0,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/usr/include/php/20180731/Zend/zend_API.h:382:15: note: expected ‘zend_object * {aka struct _zend_object *}’ but argument is of type ‘zend_function_entry (*)[1] {aka struct _zend_function_entry (*)[1]}’
+ ZEND_API void object_properties_init(zend_object *object, zend_class_entry *class_type);
+               ^~~~~~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:105:8: error: request for member ‘zo’ in something not a structure or union
+  intern->zo.handlers = &fasttext_object_handlers;
+        ^~
+/home/yujiro/git/jumanpp-php/jumanpp.c:105:12: error: ‘(zend_function_entry *)&<erroneous-expression>’ is a pointer; did you mean to use ‘->’?
+  intern->zo.handlers = &fasttext_object_handlers;
+            ^
+            ->
+/home/yujiro/git/jumanpp-php/jumanpp.c:107:16: error: request for member ‘zo’ in something not a structure or union
+  return &intern->zo;
+                ^~
+/home/yujiro/git/jumanpp-php/jumanpp.c:107:9: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+  return &intern->zo;
+         ^~~~~~~~~~~
+In file included from /usr/include/php/20180731/Zend/zend_types.h:25:0,
+                 from /usr/include/php/20180731/Zend/zend.h:27,
+                 from /usr/include/php/20180731/main/php.h:34,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/home/yujiro/git/jumanpp-php/jumanpp.c: In function ‘zm_startup_fasttext’:
+/home/yujiro/git/jumanpp-php/jumanpp.c:123:47: error: ‘php_fasttext_object’ undeclared (first use in this function); did you mean ‘php_fasttext_object_new’?
+  fasttext_object_handlers.offset = XtOffsetOf(php_fasttext_object, zo);
+                                               ^
+/usr/include/php/20180731/Zend/zend_portability.h:347:34: note: in definition of macro ‘XtOffset’
+     ((zend_long) (((char *) (&(((p_type)NULL)->field))) - ((char *) NULL)))
+                                  ^~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:123:36: note: in expansion of macro ‘XtOffsetOf’
+  fasttext_object_handlers.offset = XtOffsetOf(php_fasttext_object, zo);
+                                    ^~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_portability.h:347:40: error: expected expression before ‘)’ token
+     ((zend_long) (((char *) (&(((p_type)NULL)->field))) - ((char *) NULL)))
+                                        ^
+/usr/include/php/20180731/Zend/zend_portability.h:354:36: note: in expansion of macro ‘XtOffset’
+ # define XtOffsetOf(s_type, field) XtOffset(s_type*, field)
+                                    ^~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:123:36: note: in expansion of macro ‘XtOffsetOf’
+  fasttext_object_handlers.offset = XtOffsetOf(php_fasttext_object, zo);
+                                    ^~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_portability.h:354:51: error: invalid operands to binary * (have ‘zend_function_entry * {aka struct _zend_function_entry *}’ and ‘zend_function_entry * {aka struct _zend_function_entry *}’)
+ # define XtOffsetOf(s_type, field) XtOffset(s_type*, field)
+                                                   ^
+/usr/include/php/20180731/Zend/zend_portability.h:347:34: note: in definition of macro ‘XtOffset’
+     ((zend_long) (((char *) (&(((p_type)NULL)->field))) - ((char *) NULL)))
+                                  ^~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:123:36: note: in expansion of macro ‘XtOffsetOf’
+  fasttext_object_handlers.offset = XtOffsetOf(php_fasttext_object, zo);
+                                    ^~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_portability.h:347:33: error: called object is not a function or function pointer
+     ((zend_long) (((char *) (&(((p_type)NULL)->field))) - ((char *) NULL)))
+                                 ^
+/usr/include/php/20180731/Zend/zend_portability.h:354:36: note: in expansion of macro ‘XtOffset’
+ # define XtOffsetOf(s_type, field) XtOffset(s_type*, field)
+                                    ^~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:123:36: note: in expansion of macro ‘XtOffsetOf’
+  fasttext_object_handlers.offset = XtOffsetOf(php_fasttext_object, zo);
+                                    ^~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_portability.h:347:46: error: ‘zend_function_entry {aka struct _zend_function_entry}’ has no member named ‘zo’
+     ((zend_long) (((char *) (&(((p_type)NULL)->field))) - ((char *) NULL)))
+                                              ^
+/usr/include/php/20180731/Zend/zend_portability.h:354:36: note: in expansion of macro ‘XtOffset’
+ # define XtOffsetOf(s_type, field) XtOffset(s_type*, field)
+                                    ^~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:123:36: note: in expansion of macro ‘XtOffsetOf’
+  fasttext_object_handlers.offset = XtOffsetOf(php_fasttext_object, zo);
+                                    ^~~~~~~~~~
+In file included from /usr/include/php/20180731/main/php.h:38:0,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/home/yujiro/git/jumanpp-php/jumanpp.c: At top level:
+/usr/include/php/20180731/Zend/zend_API.h:144:85: error: expected declaration specifiers or ‘...’ before ‘zend_fasttext_globals’
+ #define ZEND_MODULE_GLOBALS_CTOR_D(module)  void ZEND_MODULE_GLOBALS_CTOR_N(module)(zend_##module##_globals *module##_globals)
+                                                                                     ^
+/usr/include/php/20180731/Zend/zend_API.h:670:31: note: in expansion of macro ‘ZEND_MODULE_GLOBALS_CTOR_D’
+ #define ZEND_GINIT_FUNCTION   ZEND_MODULE_GLOBALS_CTOR_D
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/php/20180731/main/php.h:451:29: note: in expansion of macro ‘ZEND_GINIT_FUNCTION’
+ #define PHP_GINIT_FUNCTION  ZEND_GINIT_FUNCTION
+                             ^~~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:159:8: note: in expansion of macro ‘PHP_GINIT_FUNCTION’
+ static PHP_GINIT_FUNCTION(fasttext)
+        ^~~~~~~~~~~~~~~~~~
+In file included from /usr/include/php/20180731/Zend/zend_API.h:25:0,
+                 from /usr/include/php/20180731/main/php.h:38,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/usr/include/php/20180731/Zend/zend_modules.h:56:43: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ # define ZEND_MODULE_GLOBALS(module_name) sizeof(zend_##module_name##_globals), &module_name##_globals
+                                           ^
+/usr/include/php/20180731/main/php.h:454:29: note: in expansion of macro ‘ZEND_MODULE_GLOBALS’
+ #define PHP_MODULE_GLOBALS  ZEND_MODULE_GLOBALS
+                             ^~~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:177:2: note: in expansion of macro ‘PHP_MODULE_GLOBALS’
+  PHP_MODULE_GLOBALS(fasttext),
+  ^~~~~~~~~~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_modules.h:56:43: note: (near initialization for ‘fasttext_module_entry.globals_size’)
+ # define ZEND_MODULE_GLOBALS(module_name) sizeof(zend_##module_name##_globals), &module_name##_globals
+                                           ^
+/usr/include/php/20180731/main/php.h:454:29: note: in expansion of macro ‘ZEND_MODULE_GLOBALS’
+ #define PHP_MODULE_GLOBALS  ZEND_MODULE_GLOBALS
+                             ^~~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:177:2: note: in expansion of macro ‘PHP_MODULE_GLOBALS’
+  PHP_MODULE_GLOBALS(fasttext),
+  ^~~~~~~~~~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_modules.h:56:43: error: initializer element is not constant
+ # define ZEND_MODULE_GLOBALS(module_name) sizeof(zend_##module_name##_globals), &module_name##_globals
+                                           ^
+/usr/include/php/20180731/main/php.h:454:29: note: in expansion of macro ‘ZEND_MODULE_GLOBALS’
+ #define PHP_MODULE_GLOBALS  ZEND_MODULE_GLOBALS
+                             ^~~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:177:2: note: in expansion of macro ‘PHP_MODULE_GLOBALS’
+  PHP_MODULE_GLOBALS(fasttext),
+  ^~~~~~~~~~~~~~~~~~
+/usr/include/php/20180731/Zend/zend_modules.h:56:43: note: (near initialization for ‘fasttext_module_entry.globals_size’)
+ # define ZEND_MODULE_GLOBALS(module_name) sizeof(zend_##module_name##_globals), &module_name##_globals
+                                           ^
+/usr/include/php/20180731/main/php.h:454:29: note: in expansion of macro ‘ZEND_MODULE_GLOBALS’
+ #define PHP_MODULE_GLOBALS  ZEND_MODULE_GLOBALS
+                             ^~~~~~~~~~~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:177:2: note: in expansion of macro ‘PHP_MODULE_GLOBALS’
+  PHP_MODULE_GLOBALS(fasttext),
+  ^~~~~~~~~~~~~~~~~~
+In file included from /usr/include/php/20180731/main/php.h:38:0,
+                 from /home/yujiro/git/jumanpp-php/jumanpp.c:5:
+/usr/include/php/20180731/Zend/zend_API.h:134:45: error: ‘zm_globals_ctor_fasttext’ undeclared here (not in a function); did you mean ‘zm_startup_fasttext’?
+ #define ZEND_MODULE_GLOBALS_CTOR_N(module)  zm_globals_ctor_##module
+                                             ^
+/usr/include/php/20180731/Zend/zend_API.h:662:48: note: in expansion of macro ‘ZEND_MODULE_GLOBALS_CTOR_N’
+ #define ZEND_GINIT(module)  ((void (*)(void*))(ZEND_MODULE_GLOBALS_CTOR_N(module)))
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/php/20180731/main/php.h:443:20: note: in expansion of macro ‘ZEND_GINIT’
+ #define PHP_GINIT  ZEND_GINIT
+                    ^~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:178:2: note: in expansion of macro ‘PHP_GINIT’
+  PHP_GINIT(fasttext),
+  ^~~~~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:662:29: error: initializer element is not constant
+ #define ZEND_GINIT(module)  ((void (*)(void*))(ZEND_MODULE_GLOBALS_CTOR_N(module)))
+                             ^
+/usr/include/php/20180731/main/php.h:443:20: note: in expansion of macro ‘ZEND_GINIT’
+ #define PHP_GINIT  ZEND_GINIT
+                    ^~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:178:2: note: in expansion of macro ‘PHP_GINIT’
+  PHP_GINIT(fasttext),
+  ^~~~~~~~~
+/usr/include/php/20180731/Zend/zend_API.h:662:29: note: (near initialization for ‘fasttext_module_entry.globals_ctor’)
+ #define ZEND_GINIT(module)  ((void (*)(void*))(ZEND_MODULE_GLOBALS_CTOR_N(module)))
+                             ^
+/usr/include/php/20180731/main/php.h:443:20: note: in expansion of macro ‘ZEND_GINIT’
+ #define PHP_GINIT  ZEND_GINIT
+                    ^~~~~~~~~~
+/home/yujiro/git/jumanpp-php/jumanpp.c:178:2: note: in expansion of macro ‘PHP_GINIT’
+  PHP_GINIT(fasttext),
+  ^~~~~~~~~
+make: *** [jumanpp.lo] Error 1
